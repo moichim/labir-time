@@ -20,7 +20,9 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.ts
 var src_exports = {};
 __export(src_exports, {
-  default: () => src_default
+  TimeFormat: () => TimeFormat,
+  TimePeriod: () => TimePeriod,
+  TimeRound: () => TimeRound
 });
 module.exports = __toCommonJS(src_exports);
 
@@ -142,10 +144,9 @@ _TimeFormat.humanDate = (value, includeYear = false) => {
   return (0, import_date_fns2.format)(value, includeYear ? "d. M." : "d. M. yyyy");
 };
 var TimeFormat = _TimeFormat;
-
-// src/index.ts
-var src_default = {
+// Annotate the CommonJS export names for ESM import in node:
+0 && (module.exports = {
+  TimeFormat,
   TimePeriod,
-  TimeRound,
-  TimeFormat
-};
+  TimeRound
+});

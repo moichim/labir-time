@@ -116,13 +116,8 @@ _TimeFormat.humanDate = (value, includeYear = false) => {
   return format(value, includeYear ? "d. M." : "d. M. yyyy");
 };
 var TimeFormat = _TimeFormat;
-
-// src/index.ts
-var src_default = {
-  TimePeriod,
-  TimeRound,
-  TimeFormat
-};
 export {
-  src_default as default
+  TimeFormat,
+  TimePeriod,
+  TimeRound
 };

@@ -38,10 +38,4 @@ declare class TimeFormat extends TimeUtilsBase {
     static human(date: AcceptableDateInput): string;
 }
 
-declare const _default: {
-    TimePeriod: typeof TimePeriod;
-    TimeRound: typeof TimeRound;
-    TimeFormat: typeof TimeFormat;
-};
-
-export { _default as default };
+export { TimeFormat, TimePeriod, TimeRound };
