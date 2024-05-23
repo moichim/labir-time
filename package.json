@@ -1,6 +1,6 @@
 {
   "name": "@labir/time",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Time utilities for LabIR ecosystem.",
   "main": "index.js",
   "module": "dist/index.mjs",
